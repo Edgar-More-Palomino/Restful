@@ -14,9 +14,9 @@ public class Persona {
     @Id
     private Integer id;
 
-   @Column
+    @Column
     private String nombre;
 
-   @Column
+    @Column
     private String apellido;
 }

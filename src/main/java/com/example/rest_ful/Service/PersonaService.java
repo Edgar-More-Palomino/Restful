@@ -20,26 +20,28 @@ public class PersonaService {
     //POST
     //localhost:8080/persona/guardar
     @PostMapping("/guardar")
-    public void guardar(@RequestBody Persona persona)
-    {
+    public void guardar(@RequestBody Persona persona) {
         personaDao.save(persona);
     }
 
+    //GET
+    //localhost:8080/persona/listar
     @GetMapping("/listar")
-    public List<Persona>listar()
-    {
+    public List<Persona> listar() {
         return personaDao.findAll();
     }
 
+    //DELETE
+    //localhost:8080/persona/eliminar/1
     @DeleteMapping("/eliminar/{id}")
-    public  void  eliminar(@PathVariable("id")Integer id)
-    {
+    public void eliminar(@PathVariable("id") Integer id) {
         personaDao.deleteById(id);
     }
 
+    //PUT
+    //localhost:8080/persona/actualizar
     @PutMapping("/actualizar")
-    public  void  actualizar(@RequestBody Persona persona)
-    {
+    public void actualizar(@RequestBody Persona persona) {
         personaDao.save(persona);
     }
 
