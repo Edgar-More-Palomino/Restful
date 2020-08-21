@@ -1,4 +1,4 @@
-package com.example.rest_ful.Model;
+package com.example.rest_ful.model;
 
 import lombok.Getter;
 import lombok.Setter;
